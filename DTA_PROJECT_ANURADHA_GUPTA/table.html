@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-table {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .search-container-table {
+      display: flex;
+      align-items: center;
+      max-width: 500px; /* Adjust the maximum width as needed */
+      flex: 1; /* Allows the container to take available space */
+      border: 2px solid #ccc;
+            border-radius: 25px;
+            padding: 5px 15px;
+            margin-right: 20px;
+
+    }
+
+    .search-container-table input {
+      width: 100%;
+      padding: 5px;  
+      border: none;
+     
+
+    }
+        .navbar-table .search-container-table img {
+            width: 20px;
+            height: 20px;
+        }
+        .navbar-table .nav-links-table {
+            
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between search-container and nav-links */
+      margin-left: 10px; /* Gap between search-container and nav-links */
+    }
+
+        
+        .navbar-table .nav-links-table a {
+            margin-right: 30px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar-table .nav-links-table a:hover {
+            text-decoration: underline;
+        }
+        .navbar-table .items-count {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .table-container {
+            margin: 20px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            text-align: center;
+        }
+        .item-number {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .item-number:hover {
+            text-decoration: underline;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .quantity-control button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 3px 5px 3px 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 50%;
+           
+            cursor: pointer;
+        }
+        .quantity-control input {
+            width: 50px;
+            text-align: center;
+            border: 2px solid #ddd;
+            margin: 0 5px;
+            border-radius: 25px;
+
+        }
+        .remove-item {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .remove-item img {
+            width: 20px;
+            height: 20px;
+        }
+        .remove-item:hover {
+            text-decoration: underline;
+        }th {
+            background-color:rgb(196, 196, 214); /* Change this to your desired color */
+            color: black; /* Optional: change text color to contrast with background */
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="navbar-table">
+        <div class="search-container-table">
+            <input type="text" placeholder="Search by Item Name or Item ID or Brand" >
+            <img src="images/Search_Icon.svg.png" alt="Search Icon" >
+            
+        </div>
+        <div class="nav-links-table">
+            <a href="#">QUICK ADD ITEMS</a>
+            <a href="#">UPLOAD CSV</a>
+        </div>
+        <div class="items-count">10 Items</div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead >
+                <tr >
+                    <th>Item</th>
+                    <th>Brand</th>
+                    <th>Pack/Size</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Value</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="item-number">#063402</p> Beef Tenderloin Prime</td>
+                    <td>Winn Meat</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#234523</p> Butter Stick Soy Free</td>
+                    <td>Earth Balance</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#4554851</p> Lemonade Frozen Condensed</td>
+                    <td>Creative Beverages</td>
+                    <td>9/64 oz</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#393099</p> Easy Whole Easy Eggs</td>
+                    <td>Papetis</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="24">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+                <tr>
+                    <td><p class="item-number">#123487</p> Coconut Snowflake Bulk</td>
+                    <td>Snowflake</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="20">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+                <tr>
+                    <td><p class="item-number">#223123</p> Egg Fresh Shell Medium USDA</td>
+                    <td>Ellington Farms</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="6">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00 </td>
+                    <td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#124568</p> Flour Hotel & Restaurant</td>
+                    <td>Ellington Farms</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="9">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+                <tr>
+                    <td><p class="item-number">#223100</p> Abita Root Beer</td>
+                    <td>Abita</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

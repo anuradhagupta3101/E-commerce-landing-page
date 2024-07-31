@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/allitems.css">
+    <link rel="stylesheet" href="css/recentorders.css">
+    <style>
+       /*navbar styling*/
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #19274d;
+            color: white;
+           
+        }
+        
+        .navbar .top-section,
+        .navbar .bottom-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 130px;
+            margin-right: 0px;
+
+
+        }
+        .navbar .logo img {
+            height: 40px;
+            
+            
+            
+        }
+        .navbar .search {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .navbar .search input {
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            
+            margin-left: 0px;
+           
+           
+        }
+        .navbar .search button {
+            
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            cursor: pointer;
+           margin-right: 100px;
+       
+        }
+        .navbar .bottom-section {
+            
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: 100px;
+            margin-left: 100px;
+            
+            height: 50px;
+
+        }
+        
+
+        .navbar .menu a {
+            padding: 10px 10px;
+            margin-right: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar .new-order button {
+            padding: 5px 5px;
+            width: 100px;
+            border: none;
+            background-color: #fcb916;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .top-section{
+            background-color: white;
+            width: 100%;
+            height: 70px;
+        }
+        .searchicon{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        /*navbar styling ends*/
+        /*front image starts*/
+        .container-front {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            
+        }
+        .image-container {
+            position: relative;
+            margin-left: 250px;
+        }
+        .image-container img {
+            width: 80%;
+            height: 250px;
+           border: 2px solid green;
+           border-radius: 10px;
+        }
+        .overlay-text {
+            width: 200px;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .overlay-text h1 {
+            margin: 0;
+            font-size:20px;
+            color: #333;
+        }
+        .overlay-text p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .overlay-text .button {
+            display: inline-block;
+            
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+        .overlay-text .button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+
+ /* Responsive design */
+       
+        @media (max-width: 768px) {
+            .overlay-text {
+                top: 10%;
+                left: 5%;
+                right: 5%;
+                text-align: center;
+            }
+        }
+
+        /*front image ends*/
+
+        /*recommendation styling starts*/
+
+.container-rec{
+    margin-top: 30px;
+    display:grid;
+    background-color: white;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    
+    
+    
+}
+.item-rec{
+    
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    height: 340px;
+    
+   
+    font-size: 18px;
+   
+   
+    
+    border-radius: 7px;
+    
+    
+    background-size: 350px 150px;
+    background-position: 5px 5px;
+    
+    display: inline;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    padding: 10px 0px 0px 0px;
+    border: 2px solid whitesmoke;
+    white-space: normal;
+
+
+    
+}
+
+
+.headContainer-rec{
+    margin: 2px 2px 2px 0px;
+    padding: 5px 15px 40px 7px ;
+    border: 3px solid green;
+    border-radius: 7px;
+}
+a {
+   
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+   
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  a{
+    float: right;
+    margin-left: 10px;
+  }
+
+
+
+.fa-cart-plus{
+  background:#0652DD;
+}
+
+.addtocart{
+  display:block;
+  padding:1.5em 1em 1.5em 1em;
+  
+  margin-left: 1.4em;
+ 
+  border-radius:100px;
+  border:none;
+  font-size:14px;
+  font-weight: bolder;
+  background:#0652DD;
+  cursor:pointer;
+  height:1em;
+  width:18em;
+  overflow:hidden;
+  transition:transform 0.1s;
+  position: absolute;
+ 
+}
+  
+  
+  .addtocart:hover{
+    transform:scale(1.1);
+  }
+  .pretext{
+    color:#fff;
+    background:#0652DD;
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  i{
+    margin-right:10px;
+  }
+  .addtolist{
+    display:block;
+    padding:1.5em 1em 1.5em 1em;
+    margin-left: 5em;
+    margin-right: 4em;
+    background-color: white;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    
+    border:none;
+    font-size:10px;
+    font-weight: bold;
+    color: #0652DD;
+    
+    
+    cursor:pointer;
+    height:1em;
+    width:20em;
+    overflow:hidden;
+    transition:transform 0.1s;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
+    .addtolist:hover{
+      transform:scale(1.1);
+    }
+    .offer{
+        color: green;
+    }
+
+    .description{
+       height: 140px;
+        margin-top: 6em;
+        margin-bottom:0.1em;
+
+        
+
+    }
+
+   
+  /*recommendation styling ends*/
+  /*frequently bought starts*/
+  .container-fb{
+    margin-top: 30px;
+    display:grid;
+    background-color: white;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    
+    
+    
+}.top-left {
+   position: relative;
+    top: 8px;
+    left: 20px;
+    border: 2px solid black;
+    display:block;
+    border-radius: 25px;
+    width: 67px;
+    padding-left: 5px;
+    background-color: rgb(231, 227, 227);
+    font-size: small;
+  }
+  
+
+.item-fb{
+    
+    background-color: white;
+    
+    height: 350px;
+    
+   
+    font-size: 18px;
+   
+   
+    
+    border-radius: 7px;
+    
+    
+    background-size: 350px 150px;
+    background-position: 5px 5px;
+    
+    
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    padding: 10px 0px 0px 0px;
+    border: 2px solid whitesmoke;
+    white-space: normal;
+    
+
+
+
+    
+}
+
+.headContainer-fb{
+    margin: 2px 2px 2px 0px;
+    padding: 5px 15px 40px 7px ;
+    border: 3px solid green;
+    border-radius: 7px;
+}
+a {
+   
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+   
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  a{
+    float: right;
+    margin-left: 10px;
+  }
+
+
+
+.fa-cart-plus{
+  background:#0652DD;
+}
+
+.addtocart{
+  display:block;
+  padding:1.5em 1em 1.5em 1em;
+  
+  margin-left: 1.4em;
+ 
+  border-radius:100px;
+  border:none;
+  font-size:14px;
+  font-weight: bolder;
+  background:#0652DD;
+  cursor:pointer;
+  height:1em;
+  width:18em;
+  overflow:hidden;
+  transition:transform 0.1s;
+  position: absolute;
+ 
+}
+  
+  
+  .addtocart:hover{
+    transform:scale(1.1);
+  }
+  .pretext{
+    color:#fff;
+    background:#0652DD;
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  i{
+    margin-right:10px;
+  }
+  .addtolist{
+    display:block;
+    padding:1.5em 1em 1.5em 1em;
+    margin-left: 5em;
+    margin-right: 4em;
+    background-color: white;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    
+    border:none;
+    font-size:10px;
+    font-weight: bold;
+    color: #0652DD;
+    
+    
+    cursor:pointer;
+    height:1em;
+    width:20em;
+    overflow:hidden;
+    transition:transform 0.1s;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
+    .addtolist:hover{
+      transform:scale(1.1);
+    }
+    .offer{
+        color: green;
+    }
+
+    .description-fb{
+       height: 120px;
+        margin-top: 9em;
+       margin-bottom: 0.1em;
+       margin-left: 8px;
+
+    } 
+
+    .packer{
+        display: inline-flex;
+        color: grey;
+        
+
+    }.quantity-control-fb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .quantity-control-fb button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 3px 5px 3px 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 50%;
+       
+        cursor: pointer;
+    }
+    .quantity-control-fb input {
+        width: 50px;
+        text-align: center;
+        border: 2px solid #ddd;
+        margin: 0 5px;
+        border-radius: 25px;
+
+    }
+    .instock{
+        margin-top: 5px;
+        float: left;
+    }
+    .menu-fb{
+        color: rgba(12, 7, 88, 0.886);
+    }
+    
+   
+  /*frequently bought ends*/
+  /*table starts here*/
+  .navbar-table {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .search-container-table {
+      display: flex;
+      align-items: center;
+      max-width: 500px; /* Adjust the maximum width as needed */
+      flex: 1; /* Allows the container to take available space */
+      border: 2px solid #ccc;
+            border-radius: 25px;
+            padding: 5px 15px;
+            margin-right: 20px;
+
+    }
+
+    .search-container-table input {
+      width: 100%;
+      padding: 5px;  
+      border: none;
+     
+
+    }
+        .navbar-table .search-container-table img {
+            width: 20px;
+            height: 20px;
+        }
+        .navbar-table .nav-links-table {
+            
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between search-container and nav-links */
+      margin-left: 10px; /* Gap between search-container and nav-links */
+    }
+
+        
+        .navbar-table .nav-links-table a {
+            margin-right: 30px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar-table .nav-links-table a:hover {
+            text-decoration: underline;
+        }
+        .navbar-table .items-count {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .table-container {
+            margin: 20px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            text-align: center;
+        }
+        .item-number {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .item-number:hover {
+            text-decoration: underline;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .quantity-control button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 3px 5px 3px 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 50%;
+           
+            cursor: pointer;
+        }
+        .quantity-control input {
+            width: 50px;
+            text-align: center;
+            border: 2px solid #ddd;
+            margin: 0 5px;
+            border-radius: 25px;
+
+        }
+        .remove-item {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .remove-item img {
+            width: 20px;
+            height: 20px;
+        }
+        .remove-item:hover {
+            text-decoration: underline;
+        }th {
+            background-color:rgb(196, 196, 214); /* Change this to your desired color */
+            color: black; /* Optional: change text color to contrast with background */
+        }
+      /* table ends here*/.master{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 0;
+        }
+        .container-explore {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: rgb(253,248,226);
+            padding: 0px 30px 30px 30px;
+        }
+        .container1-explore{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            padding: 30px 30px 0px 30px;
+            background-color: rgb(253, 248, 226);
+
+        }
+        
+        .block {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 10px;
+            border: 2px solid rgb(239, 207, 147);
+            background-color: white;
+            border-radius: 7px;
+        }
+        .block img{
+            width: 50px;
+            height: 50px;
+            align-items: center;
+        }
+        .class-item{
+            font-size: small;
+        }
+    
+      /* explore*/
+
+
+
+
+   
+
+    </style>
+    <body>
+        
+        
+        <!--navbar starts here-->
+        <nav class="navbar">
+        <div class="top-section">
+            <div class="logo">
+                <img src="images/entree.png" alt="Logo">
+                <span>entrée</span>
+            </div>
+            <div class="search"> <nav class="navbar"></nav>
+                
+               
+                <input type="text" placeholder="What can we help you find? " >
+                <button type="button"><i class="fa fa-search" style="font-size:24px"></i></button>
+                
+                
+            </div>
+           
+        </div>
+        <div class="bottom-section">
+            <div class="menu">
+                <a href="#">Categories</a>
+                <a href="#">Brands</a>
+                <a href="#">My Lists</a>
+                <a href="#">My Order History</a>
+                
+            </div><div class="new-order">
+                <button>New Order</button>
+            </div>
+
+        </div>
+    </nav>
+    <br>
+<!-- navbar ends here-->
+
+<!--front image starts
+--><div class="container-front">
+    <div class="image-container">
+        <img src="images/food11.webp"  alt="">
+        <div class="overlay-text">
+            <h1>The steaks are high!</h1>
+            <p>Simply the best steak in town. Grab them at the best price now.</p>
+            <a href="#" class="button">BUY NOW</a>
+        </div>
+    </div>
+</div>
+
+
+<!--front image ends-->
+
+<!--recommendation page starts--><div class="headContainer-rec">
+        <h1 id="title" style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; font-size: x-large;color: gray;">Recommended For You<a href="#" class="previous round">&#8249;</a>
+            <a href="#" class="next round">&#8250;</a> </h1>  
+        
+         
+
+        <div class="container-rec">
+            
+            <div class="item-rec" style="background-image: url(images/food2.webp); ">
+                <div class="description">
+                <p class="menu" style="font-size: large; font-weight: bold ;">CRANBERRY</p>
+                <p class="offer"style="font-size: large; font-weight: bold ;" >$40 (offer ending soon)</p>
+               
+
+                <button class="addtolist">
+                    <i >+</i>
+                    <i></i>ADD TO LIST
+                    <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                    
+
+                     
+                    
+                  </button>
+                 <button class="addtocart">
+                    <div class="pretext">
+                      <i ></i> ADD TO CART
+                    </div>
+                    
+                    
+                  </button>
+                  </div>
+                
+             
+            </div>
+            
+            <div class="item-rec" style="background-image: url(images/food3.jfif);">
+                <div class="description">
+               
+                <p class="menu"style="font-size: large; font-weight: bold ;" >PIZZA</p> 
+                <p style="font-size: large; font-weight: bold ;">$60</p>
+
+                <button class="addtolist">
+
+                  
+                    <i >+</i>
+                    <i></i>ADD TO LIST
+                    <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                    
+                    
+                    
+                    
+                  </button> <button class="addtocart"><div class="pretext">
+                    <i ></i> ADD TO CART
+                  </div>
+
+
+                    
+                    
+                    
+                    
+                    
+                  </button>
+                  </div>
+
+               
+                
+            </div>
+
+            <div class="item-rec" style="background-image: url(images/food1.webp);">
+                <div class="description">
+                <p class="menu"style="font-size: large; font-weight: bold ;" >AVOCADO</p>
+                <p class="offer"style="font-size: large; font-weight: bold ;" >$12(offer ending soon)</p>
+                <button class="addtolist">
+                    
+                    <i >+</i>
+                    <i></i>ADD TO LIST
+                    <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px; "></i>
+                    
+                   
+                    
+                    
+                  </button>
+
+                <button class="addtocart">
+                    
+                    <div class="pretext">
+                        <i ></i> ADD TO CART
+                      </div>
+                    
+                    
+                    
+                  </button>
+                  </div>
+
+               
+                
+            </div>
+            <div class="item-rec" style="background-image: url(images/food3.jfif);">
+                
+                <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                    <p style="font-size: large; font-weight: bold ;">$30</p>
+                    <button class="addtolist">
+                           <i >+</i>
+                          <i></i>ADD TO LIST
+                          <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                          
+                        
+                        
+                        
+                      </button>
+                    <button class="addtocart">
+                        
+                          
+                        <div class="pretext">
+                            <i ></i> ADD TO CART
+                          </div>
+                        
+                      </button>
+
+                </div>
+    
+    
+    
+    
+    
+    
+            
+        </div>
+        </div>
+      
+            
+        </div>
+
+        <br>
+
+<!--recommendation page ends-->
+
+<!--all items start here-->
+
+<div class="headContainer">
+    <h1 id="title" style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; font-size: x-large;color: gray;">Recommended For You<a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a> </h1>  
+    
+     
+
+    <div class="container">
+        
+        <div class="item" style="background-image: url(images/food2.webp); ">
+            <div class="description">
+            <p class="menu" style="font-size: large; font-weight: bold ;">CRANBERRY</p>
+            <p class="offer"style="font-size: large; font-weight: bold ;" >$40 (offer ending soon)</p>
+           
+
+            <button class="addtolist">
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                
+
+                 
+                
+              </button>
+             <button class="addtocart">
+                <div class="pretext">
+                  <i ></i> ADD TO CART
+                </div>
+                
+                
+              </button>
+              </div>
+            
+         
+        </div>
+        
+        <div class="item" style="background-image: url(images/food3.jfif);">
+            <div class="description">
+           
+            <p class="menu"style="font-size: large; font-weight: bold ;" >PIZZA</p> 
+            <p style="font-size: large; font-weight: bold ;">$60</p>
+
+            <button class="addtolist">
+
+              
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                
+                
+                
+                
+              </button> <button class="addtocart"><div class="pretext">
+                <i ></i> ADD TO CART
+              </div>
+
+
+                
+                
+                
+                
+                
+              </button>
+              </div>
+
+           
+            
+        </div>
+        <div class="item" style="background-image: url(images/food1.webp);">
+            <div class="description">
+            <p class="menu"style="font-size: large; font-weight: bold ;" >AVOCADO</p>
+            <p class="offer"style="font-size: large; font-weight: bold ;" >$12(offer ending soon)</p>
+            <button class="addtolist">
+                
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px; "></i>
+                
+               
+                
+                
+              </button>
+
+            <button class="addtocart">
+                
+                <div class="pretext">
+                    <i ></i> ADD TO CART
+                  </div>
+                
+                
+                
+              </button>
+              </div>
+
+           
+            
+        </div>
+        <div class="item" style="background-image: url(images/food15.webp);">
+            
+            <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                <p style="font-size: large; font-weight: bold ;">$30</p>
+                <button class="addtolist">
+                       <i >+</i>
+                      <i></i>ADD TO LIST
+                      <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                      
+                    
+                    
+                    
+                  </button>
+                <button class="addtocart">
+                    
+                      
+                    <div class="pretext">
+                        <i ></i> ADD TO CART
+                      </div>
+                    
+                  </button>
+
+           
+           
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="item" style="background-image: url(images/food14.jpg);">
+            
+                <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                    <p style="font-size: large; font-weight: bold ;">$30</p>
+                    <button class="addtolist">
+                           <i >+</i>
+                          <i></i>ADD TO LIST
+                          <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                          
+                        
+                        
+                        
+                      </button>
+                    <button class="addtocart">
+                        
+                          
+                        <div class="pretext">
+                            <i ></i> ADD TO CART
+                          </div>
+                        
+                      </button>
+
+               
+               
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="item" style="background-image: url(images/food13.jpg);">
+            
+                    <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                        <p style="font-size: large; font-weight: bold ;">$30</p>
+                        <button class="addtolist">
+                               <i >+</i>
+                              <i></i>ADD TO LIST
+                              <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                              
+                            
+                            
+                            
+                          </button>
+                        <button class="addtocart">
+                            
+                              
+                            <div class="pretext">
+                                <i ></i> ADD TO CART
+                              </div>
+                            
+                          </button>
+    
+                   
+                   
+                        </div>
+    
+    
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="item" style="background-image: url(images/food12.webp);">
+            
+                        <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                            <p style="font-size: large; font-weight: bold ;">$30</p>
+                            <button class="addtolist">
+                                   <i >+</i>
+                                  <i></i>ADD TO LIST
+                                  <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                                  
+                                
+                                
+                                
+                              </button>
+                            <button class="addtocart">
+                                
+                                  
+                                <div class="pretext">
+                                    <i ></i> ADD TO CART
+                                  </div>
+                                
+                              </button>
+        
+                       
+                       
+                            </div>
+        
+        
+                        </div>
+            
+            
+            
+        
+        
+                        <div class="item" style="background-image: url(images/food11.webp);">
+            
+                            <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                                <p style="font-size: large; font-weight: bold ;">$30</p>
+                                <button class="addtolist">
+                                       <i >+</i>
+                                      <i></i>ADD TO LIST
+                                      <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                                      
+                                    
+                                    
+                                    
+                                  </button>
+                                <button class="addtocart">
+                                    
+                                      
+                                    <div class="pretext">
+                                        <i ></i> ADD TO CART
+                                      </div>
+                                    
+                                  </button>
+            
+                           
+                           
+                                </div>
+            
+            
+                            </div>
+                
+                
+                
+    
+    
+    
+
+
+
+
+
+
+        
+ 
+ 
+ 
+        </div>
+
+</div>
+
+
+
+
+
+<br>
+
+<div class="headContainer">
+    <h1 id="title" style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; font-size: x-large;color: gray;">Recommended For You<a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a> </h1>  
+    
+     
+
+    <div class="container">
+        
+        <div class="item" style="background-image: url(images/food10.webp); ">
+            <div class="description">
+            <p class="menu" style="font-size: large; font-weight: bold ;">CRANBERRY</p>
+            <p class="offer"style="font-size: large; font-weight: bold ;" >$40 (offer ending soon)</p>
+           
+
+            <button class="addtolist">
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                
+
+                 
+                
+              </button>
+             <button class="addtocart">
+                <div class="pretext">
+                  <i ></i> ADD TO CART
+                </div>
+                
+                
+              </button>
+              </div>
+            
+         
+        </div>
+        
+        <div class="item" style="background-image: url(images/food3.jfif);">
+            <div class="description">
+           
+            <p class="menu"style="font-size: large; font-weight: bold ;" >PIZZA</p> 
+            <p style="font-size: large; font-weight: bold ;">$60</p>
+
+            <button class="addtolist">
+
+              
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                
+                
+                
+                
+              </button> <button class="addtocart"><div class="pretext">
+                <i ></i> ADD TO CART
+              </div>
+
+
+                
+                
+                
+                
+                
+              </button>
+              </div>
+
+           
+            
+        </div>
+        <div class="item" style="background-image: url(images/food1.webp);">
+            <div class="description">
+            <p class="menu"style="font-size: large; font-weight: bold ;" >AVOCADO</p>
+            <p class="offer"style="font-size: large; font-weight: bold ;" >$12(offer ending soon)</p>
+            <button class="addtolist">
+                
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px; "></i>
+                
+               
+                
+                
+              </button>
+
+            <button class="addtocart">
+                
+                <div class="pretext">
+                    <i ></i> ADD TO CART
+                  </div>
+                
+                
+                
+              </button>
+              </div>
+
+           
+            
+        </div>
+        <div class="item" style="background-image: url(images/food9.webp);">
+            
+            <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                <p style="font-size: large; font-weight: bold ;">$30</p>
+                <button class="addtolist">
+                       <i >+</i>
+                      <i></i>ADD TO LIST
+                      <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                      
+                    
+                    
+                    
+                  </button>
+                <button class="addtocart">
+                    
+                      
+                    <div class="pretext">
+                        <i ></i> ADD TO CART
+                      </div>
+                    
+                  </button>
+
+           
+           
+                </div>
+
+
+            </div>
+
+
+
+
+            
+                
+                
+                
+    
+    
+    
+
+
+
+
+
+
+        
+ 
+ 
+ 
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="headContainer">
+    <h1 id="title" style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; font-size: x-large;color: gray;">Recommended For You<a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a> </h1>  
+    
+     
+
+    <div class="container">
+        
+        <div class="item" style="background-image: url(images/food11.webp); ">
+            <div class="description">
+            <p class="menu" style="font-size: large; font-weight: bold ;">CRANBERRY</p>
+            <p class="offer"style="font-size: large; font-weight: bold ;" >$40 (offer ending soon)</p>
+           
+
+            <button class="addtolist">
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                
+
+                 
+                
+              </button>
+             <button class="addtocart">
+                <div class="pretext">
+                  <i ></i> ADD TO CART
+                </div>
+                
+                
+              </button>
+              </div>
+            
+         
+        </div>
+        
+        <div class="item" style="background-image: url(images/food12.webp);">
+            <div class="description">
+           
+            <p class="menu"style="font-size: large; font-weight: bold ;" >PIZZA</p> 
+            <p style="font-size: large; font-weight: bold ;">$60</p>
+
+            <button class="addtolist">
+
+              
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                
+                
+                
+                
+              </button> <button class="addtocart"><div class="pretext">
+                <i ></i> ADD TO CART
+              </div>
+
+
+                
+                
+                
+                
+                
+              </button>
+              </div>
+
+           
+            
+        </div>
+        <div class="item" style="background-image: url(images/food13.jpg);">
+            <div class="description">
+            <p class="menu"style="font-size: large; font-weight: bold ;" >AVOCADO</p>
+            <p class="offer"style="font-size: large; font-weight: bold ;" >$12(offer ending soon)</p>
+            <button class="addtolist">
+                
+                <i >+</i>
+                <i></i>ADD TO LIST
+                <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px; "></i>
+                
+               
+                
+                
+              </button>
+
+            <button class="addtocart">
+                
+                <div class="pretext">
+                    <i ></i> ADD TO CART
+                  </div>
+                
+                
+                
+              </button>
+              </div>
+
+           
+            
+        </div>
+        <div class="item" style="background-image: url(images/food6.webp);">
+            
+            <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                <p style="font-size: large; font-weight: bold ;">$30</p>
+                <button class="addtolist">
+                       <i >+</i>
+                      <i></i>ADD TO LIST
+                      <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                      
+                    
+                    
+                    
+                  </button>
+                <button class="addtocart">
+                    
+                      
+                    <div class="pretext">
+                        <i ></i> ADD TO CART
+                      </div>
+                    
+                  </button>
+
+           
+           
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="item" style="background-image: url(images/food7.webp);">
+            
+                <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                    <p style="font-size: large; font-weight: bold ;">$30</p>
+                    <button class="addtolist">
+                           <i >+</i>
+                          <i></i>ADD TO LIST
+                          <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                          
+                        
+                        
+                        
+                      </button>
+                    <button class="addtocart">
+                        
+                          
+                        <div class="pretext">
+                            <i ></i> ADD TO CART
+                          </div>
+                        
+                      </button>
+
+               
+               
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="item" style="background-image: url(images/food8.webp);">
+            
+                    <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                        <p style="font-size: large; font-weight: bold ;">$30</p>
+                        <button class="addtolist">
+                               <i >+</i>
+                              <i></i>ADD TO LIST
+                              <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                              
+                            
+                            
+                            
+                          </button>
+                        <button class="addtocart">
+                            
+                              
+                            <div class="pretext">
+                                <i ></i> ADD TO CART
+                              </div>
+                            
+                          </button>
+    
+                   
+                   
+                        </div>
+    
+    
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="item" style="background-image: url(images/food9.webp);">
+            
+                        <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                            <p style="font-size: large; font-weight: bold ;">$30</p>
+                            <button class="addtolist">
+                                   <i >+</i>
+                                  <i></i>ADD TO LIST
+                                  <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                                  
+                                
+                                
+                                
+                              </button>
+                            <button class="addtocart">
+                                
+                                  
+                                <div class="pretext">
+                                    <i ></i> ADD TO CART
+                                  </div>
+                                
+                              </button>
+        
+                       
+                       
+                            </div>
+        
+        
+                        </div>
+            
+            
+            
+        
+        
+                        <div class="item" style="background-image: url(images/food10.webp);">
+            
+                            <div class="description"><p class="menu"style="font-size: large; font-weight: bold ;"  >PERI-PERI DELIGHT</p>
+                                <p style="font-size: large; font-weight: bold ;">$30</p>
+                                <button class="addtolist">
+                                       <i >+</i>
+                                      <i></i>ADD TO LIST
+                                      <i class="fa fa-heart-o" style="font-size:12px;color:red;margin-left: 10px;"></i>
+                                      
+                                    
+                                    
+                                    
+                                  </button>
+                                <button class="addtocart">
+                                    
+                                      
+                                    <div class="pretext">
+                                        <i ></i> ADD TO CART
+                                      </div>
+                                    
+                                  </button>
+            
+                           
+                           
+                                </div>
+            
+            
+                            </div>
+                
+                
+                
+    
+    
+    
+
+
+
+
+
+
+        
+ 
+ 
+ 
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--frequently bought starts--><div class="headContainer-fb">
+        <h1 id="title" style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; font-size: x-large;color: gray;">Reminder/Frequently Bought Items<a href="#" class="previous round">&#8249;</a>
+            <a href="#" class="next round">&#8250;</a> </h1>  
+        
+         
+
+        <div class="container-fb"> 
+            <div class="item-fb" style="background-image: url(images/food8.webp);">
+                <div class="top-left" style="margin-bottom: 0px;">Best-Seller</div>
+
+                <div class="description-fb " style="margin-top: 140px;">#12345
+               
+                <p class="menu-fb"style="font-size: large; font-weight: bold;" >AVOCADO</p> 
+                <h4 style="margin-top: 2px;color: grey;">packer</h4>
+
+                <p style="font-size: large; font-weight: bold ;">$60</p> 
+                <div class="quantity-control-fb">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div> 
+                
+
+               
+                </div>
+              
+
+                
+            </div>
+            
+            <div class="item-fb" style="background-image: url(images/food11.webp);">
+                <div class="description-fb">#12345
+               
+                <p class="menu-fb"style="font-size: large; font-weight: bold;" >CRANBERRY</p> 
+                <h4 style="margin-top: 2px; color: grey;">packer</h4>
+
+                <p style="font-size: large; font-weight: bold ;">$60</p> 
+                <div class="quantity-control-fb">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+               
+                
+        
+
+
+               
+                </div>
+
+               
+                
+            </div>
+            <div class="item-fb" style="background-image: url(images/food12.webp);">
+                <div class="description-fb">#12345
+               
+                <p class="menu-fb"style="font-size: large; font-weight: bold;" >PIZZA</p> 
+                <h4 style="margin-top: 2px;color: grey;">packer</h4>
+
+                <p style="font-size: large; font-weight: bold ;">$60</p> 
+                <div class="quantity-control-fb">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+               
+                
+              
+        
+
+
+               
+                </div>
+
+               
+                
+            </div>
+            <div class="item-fb" style="background-image: url(images/food13.jpg);">
+                <div class="description-fb">#12345
+               
+                <p class="menu-fb"style="font-size: large; font-weight: bold;" >PERI-PERI-DELIGHT</p> 
+                <h4 style="margin-top: 2px;color: grey;">packer</h4>
+
+                <p style="font-size: large; font-weight: bold ;">$60</p> 
+                <div class="quantity-control-fb">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+               
+                
+              
+        
+
+
+               
+                </div>
+
+               
+                
+            </div>
+           
+    
+    
+    
+    
+    
+    
+            
+        </div>
+        </div>
+     
+            
+        </div>
+<!--frequently bought ends-->
+<!--table starts here--><div class="navbar-table">
+        <div class="search-container-table">
+            <input type="text" placeholder="Search by Item Name or Item ID or Brand" >
+            <img src="images/Search_Icon.svg.png" alt="Search Icon" >
+            
+        </div>
+        <div class="nav-links-table">
+            <a href="#">QUICK ADD ITEMS</a>
+            <a href="#">UPLOAD CSV</a>
+        </div>
+        <div class="items-count">10 Items</div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead >
+                <tr >
+                    <th>Item</th>
+                    <th>Brand</th>
+                    <th>Pack/Size</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Value</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="item-number">#063402</p> Beef Tenderloin Prime</td>
+                    <td>Winn Meat</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#234523</p> Butter Stick Soy Free</td>
+                    <td>Earth Balance</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#4554851</p> Lemonade Frozen Condensed</td>
+                    <td>Creative Beverages</td>
+                    <td>9/64 oz</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#393099</p> Easy Whole Easy Eggs</td>
+                    <td>Papetis</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="24">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+                <tr>
+                    <td><p class="item-number">#123487</p> Coconut Snowflake Bulk</td>
+                    <td>Snowflake</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="20">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+                <tr>
+                    <td><p class="item-number">#223123</p> Egg Fresh Shell Medium USDA</td>
+                    <td>Ellington Farms</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="6">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00 </td>
+                    <td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+                </tr>
+                <tr>
+                    <td><p class="item-number">#124568</p> Flour Hotel & Restaurant</td>
+                    <td>Ellington Farms</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="9">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+                <tr>
+                    <td><p class="item-number">#223100</p> Abita Root Beer</td>
+                    <td>Abita</td>
+                    <td>1/10 lbs</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>$20.00</td><td><i class="fa fa-trash-o" style="font-size:28px;color: blue;"></i></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+<!--table ends here-->
+<br>
+
+<!--explore starts here--><div class="container1-explore">
+            <div style="font-size: x-large;"><b>My Top Categories</b></div>
+            <div style="font-size:medium; float: right; text-align: right; color: blue; padding: 10px; font-weight: bold;">EXPLORE ALL CATEGORIES > </div>
+        </div>
+        <div class="container-explore">
+            <!-- <h3>My Top Categories</h3>
+            <b style="color: blue;">EXPLORE ALL CATEGORIES ></b>
+            <div class="new"> -->
+                <div class="block"><img src="images/tomato.jpg" alt="t"><p class="name-item">Fruit vegetables & herbs</p></div>
+                <div class="block"><img src="images/meat.jpg" alt="m"><p class="name-item">Meat poultry & seafood</p></div>
+                <div class="block"><img src="images/cheese.jpg" alt="pc"><p class="name-item">Dairy & Eggs</p></div>
+                <div class="block"><img src="images/pickle.jpg" alt="p"><p class="name-item">Grocery</p></div>
+                <div class="block"><img src="images/donut.jpg" alt="d"><p class="name-item">Dessert</p></div>
+                <div class="block"><img src="images/chef.jpg" alt="c"><p class="name-item">Keith Kitchen Essentials</p></div>
+    </div>
+
+    <!--recent orders--><div class="container-orders">
+        
+        <div class="orders">
+            <h2 class="orderno">Order#091234
+                <span style="color: black; font-size: 15px;padding-left: 150px;">$1225.00</span>
+            </h2>
+            <p class="date">05/16/2023 <span class="time"> 17:55</span> <span class="status" style="color: grey; font-weight: bold;" >PENDING</span></p>
+            
+            <p class="qty">152 ITEMS</p>
+            <hr>
+            <p class="payment" ><span style="padding: 25px 10px 10px 10px;margin-left: 10px ; background-color: rgb(207, 157, 58); display:inline; border-radius: 7px; padding:2px 2px 2px 2px; font-size: 10px; color: rgb(132, 96, 19);"  >PROCESSING</span> <span class="deliveryDate" style="padding-left: 56px; background-color: white;">Delivery by 05/25/2023</span></p>
+
+        </div>
+        <div class="orders"><h2 class="orderno">Order#091234
+            <span style="color: black; font-size: 15px;padding-left: 150px;">$1225.00</span>
+        </h2>
+        <p class="date">05/16/2023 <span class="time"> 17:55</span> <span class="status" style="color: grey;font-weight: bold;">PENDING</span></p>
+       
+        <p class="qty">152 ITEMS</p>
+        <hr>
+        <p class="payment" ><span style="padding: 25px 10px 10px 10px;margin-left: 10px ; background-color: rgb(99, 188, 120); display:inline; border-radius: 7px; padding:2px 2px 2px 2px; font-size: 10px; color: rgb(5, 148, 5);"  >IN-TRANSIT</span> <span class="deliveryDate" style="padding-left: 56px; background-color: white;">Delivery by 05/25/2023</span></p>
+        </div>
+        <div class="orders"><h2 class="orderno">Order#091234
+            <span style="color: black; font-size: 15px;padding-left: 150px;">$1225.00</span>
+        </h2>
+        <p class="date">05/16/2023 <span class="time"> 17:55</span> <span class="status" style="color:rgb(16, 171, 16);font-weight: bold;margin-left: 20px;">PAID</span></p>
+       
+        <p class="qty">152 ITEMS</p>
+        <hr>
+        <p class="payment" ><span style="padding: 25px 10px 10px 10px;margin-left: 10px ;background-color: rgb(119, 119, 214); display:inline; border-radius: 7px; padding:2px 2px 2px 2px; font-size: 10px;"  >DELIVERED</span> <span class="deliveryDate" style="padding-left: 56px; background-color: white;">Delivered on 05/25/2023</span></p>
+
+        </div>
+       
+        <div class="balance">
+            <h1 style=" border: none;
+           
+            margin: 0;">$100.0 </h1>
+            <p style=" border: none;
+            
+            margin: 0;">Account Balance</p>
+            <br>
+            <div class="end">
+                <div class="due" style=" border: none;
+                ;
+                margin: 0;" >$0.0
+                    <p style=" border: none;
+                    
+                    margin: 0;" >Amount Due</p>
+                </div>
+                
+                <div class="cod" style=" border: none;
+                    
+                    margin: 0;" >
+                <p style=" border: none;
+                
+                margin: 0;" ></p></div>
+                <div class="cods" style=" border: none;
+                    
+                    margin: 0;" >COD
+                <p style=" border: none;
+                
+                margin: 0;" >terms</p></div>
+
+
+            </div>
+            
+            
+        </div>
+    </div>
+    
+  
+    <!--recent orders ends-->
+
+ 
+
+
+
+
+
+
+        <!--footer starts here--><div class="container-footer">
+            <div class="company-footer">
+                <ul>COMPANY
+                    <li><br>
+                        About Ben E.Keith
+                    </li>
+                    <li><br>Our Brands</li>
+                    <li><br>News Feed</li>
+                    <li><br>Eat Local Eat Often</li>
+                    
+                </ul>
+            </div>
+            <div class="company-footer">
+
+                <ul >OUR SERVICES
+                    <br>
+                    <li><br>MenuMax</li>
+                    <br>
+                    <li>HOST Services</li>
+                    <br>
+                    <li>Culinary Resource Team</li>
+                    <br>
+                    <li>News Letter</li>
+                </ul>
+            </div>
+            <div class="company-footer">
+                <ul>CUSTOMER SUPPORT<li><br>contact your Sales Rep</li>
+                    <br>
+                    <li>Help Center</li>
+                    <br>
+                    <li>Side Feedback</li>
+                    
+                  
+                </ul>
+
+            </div>
+            <div class="company-footer">
+                <ul>POLICY
+                   
+                    <li><br>License Agreement</li>
+                    
+                </ul>
+            </div>
+            <div class="company-footer">
+                <ul>Follow Us</ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+            </div>
+            <div class="company-footer">
+                <ul>SIGN UP </ul>
+                
+                <li>Recieve exclusive email only</li>
+                <br>
+                <li>promotions and offer</li>
+                <br>
+                <button class="btn-footer">SUBSCRIBE</button>
+            </div><section id="copy-right-footer">
+               <div><h5>Copyright &copy; 2023 Ben E.Keith Co. All Rights Reserved</h5></div>
+    
+            </section>
+
+
+        
+        </div>
+
+        <!--frequently bought starts--> 
+
+        <!--footer ends here-->
+
+
+
+
+        
+    
+    </body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Categories</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .master{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 0;
+        }
+        .container-explore {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: rgb(253,248,226);
+            padding: 0px 30px 30px 30px;
+        }
+        .container1-explore{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            padding: 30px 30px 0px 30px;
+            background-color: rgb(253, 248, 226);
+
+        }
+        
+        .block {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 10px;
+            border: 2px solid rgb(239, 207, 147);
+            background-color: white;
+            border-radius: 7px;
+        }
+        .block img{
+            width: 50px;
+            height: 50px;
+            align-items: center;
+        }
+        .class-item{
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container1-explore">
+            <div style="font-size: x-large;"><b>My Top Categories</b></div>
+            <div style="font-size:medium; float: right; text-align: right; color: blue; padding: 10px; font-weight: bold;">EXPLORE ALL CATEGORIES > </div>
+        </div>
+        <div class="container-explore">
+            <!-- <h3>My Top Categories</h3>
+            <b style="color: blue;">EXPLORE ALL CATEGORIES ></b>
+            <div class="new"> -->
+                <div class="block"><img src="images/tomato.jpg" alt="t"><p class="name-item">Fruit vegetables & herbs</p></div>
+                <div class="block"><img src="images/meat.jpg" alt="m"><p class="name-item">Meat poultry & seafood</p></div>
+                <div class="block"><img src="images/cheese.jpg" alt="pc"><p class="name-item">Dairy & Eggs</p></div>
+                <div class="block"><img src="images/pickle.jpg" alt="p"><p class="name-item">Grocery</p></div>
+                <div class="block"><img src="images/donut.jpg" alt="d"><p class="name-item">Dessert</p></div>
+                <div class="block"><img src="images/chef.jpg" alt="c"><p class="name-item">Keith Kitchen Essentials</p></div>
+    </div>
+ 
+</body>
+</html>

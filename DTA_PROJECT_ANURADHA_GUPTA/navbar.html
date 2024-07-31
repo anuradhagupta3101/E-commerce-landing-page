@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #19274d;
+            color: white;
+           
+        }
+        
+        .navbar .top-section,
+        .navbar .bottom-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 130px;
+            margin-right: 0px;
+
+
+        }
+        .navbar .logo img {
+            height: 40px;
+            
+            
+            
+        }
+        .navbar .search {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .navbar .search input {
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            
+            margin-left: 0px;
+           
+           
+        }
+        .navbar .search button {
+            
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            cursor: pointer;
+           margin-right: 100px;
+       
+        }
+        .navbar .bottom-section {
+            
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: 100px;
+            margin-left: 100px;
+            
+            height: 50px;
+
+        }
+        
+
+        .navbar .menu a {
+            padding: 10px 10px;
+            margin-right: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar .new-order button {
+            padding: 5px 5px;
+            width: 100px;
+            border: none;
+            background-color: #fcb916;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .top-section{
+            background-color: white;
+            width: 100%;
+            height: 70px;
+        }
+        .searchicon{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="top-section">
+            <div class="logo">
+                <img src="images/entree.png" alt="Logo">
+                <span>entrée</span>
+            </div>
+            <div class="search"> <nav class="navbar"></nav>
+                
+               
+                <input type="text" placeholder="What can we help you find? " >
+                <button type="button"><i class="fa fa-search" style="font-size:24px"></i></button>
+                
+                
+            </div>
+           
+        </div>
+        <div class="bottom-section">
+            <div class="menu">
+                <a href="#">Categories</a>
+                <a href="#">Brands</a>
+                <a href="#">My Lists</a>
+                <a href="#">My Order History</a>
+                
+            </div><div class="new-order">
+                <button>New Order</button>
+            </div>
+
+        </div>
+    </nav>
+
+</body>
+</html>

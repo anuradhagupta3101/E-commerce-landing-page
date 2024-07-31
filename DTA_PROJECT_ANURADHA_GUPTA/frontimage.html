@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steak Offer</title>
+    <style>
+        
+        .container-front {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            
+        }
+        .image-container {
+            position: relative;
+            margin-left: 250px;
+        }
+        .image-container img {
+            width: 80%;
+            height: 250px;
+           border: 2px solid green;
+           border-radius: 10px;
+        }
+        .overlay-text {
+            width: 200px;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .overlay-text h1 {
+            margin: 0;
+            font-size:20px;
+            color: #333;
+        }
+        .overlay-text p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .overlay-text .button {
+            display: inline-block;
+            
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+        .overlay-text .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .overlay-text {
+                top: 10%;
+                left: 5%;
+                right: 5%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-front">
+        <div class="image-container">
+            <img src="images/food11.webp"  alt="">
+            <div class="overlay-text">
+                <h1>The steaks are high!</h1>
+                <p>Simply the best steak in town. Grab them at the best price now.</p>
+                <a href="#" class="button">BUY NOW</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

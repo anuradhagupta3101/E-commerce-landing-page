@@ -1,0 +1,114 @@
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 225px;
+
+
+}
+body{
+    font-family:sans-serif;
+}
+
+div li{
+    display: block;
+    
+    list-style-type: none;
+    color: rgb(66, 62, 62);
+    font-weight: 400;
+    font-size: small;
+    
+    
+    
+    
+}
+.company-footer {
+   
+    
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 20px;
+    
+    
+
+
+}
+
+
+ul::before{
+    color:rgb(66, 62, 62);
+    font-weight: bolder;
+}
+ul::first-line {
+    content: attr(data-text); /* Use the data-text attribute to insert text */
+    color: rgb(66, 62, 62); /* Change the color to your preference */
+    display: block; /* Ensure the text is displayed as a block */
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: large;
+     /* Add some spacing below the text */
+}
+
+.btn-footer{
+    border: 2px solid blue;
+    color:black;
+    margin: 2px 2px 2px 2px;
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 30px;
+    width: 150px ;
+}.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: blue;
+   
+  }
+  
+  .fa-twitter {
+   
+    color: blue;
+  }
+  
+  .fa-youtube {
+    
+    color: blue;
+  }
+  
+  .fa-instagram {
+   
+    color: blue;
+  }
+  #copy-right-footer{
+    margin-left: 443px;
+    align-items: center;
+    justify-content: center;
+    
+  }	
+  .container-footer{
+    background-color: white;
+  }
+
+
+
+  
+
+
+
+/* Override styles for <li> elements */
+
+
+
